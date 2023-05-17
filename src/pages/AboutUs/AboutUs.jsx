@@ -8,19 +8,19 @@ const AboutUs = () => {
     <AboutUsWrapper>
         <h2>Sobre Nosotros</h2>
         <AboutUsText>
-            <span>Un Trago Más</span> es una tienda especializada en bebidas alcohólicas que ofrece una <span>experiencia única</span> para 
-            los amantes de los sabores, aromas y texturas de los licores más finos.
+        Un Trago Más es la tienda de cócteles que te invita a descubrir una <span>experiencia única</span> y <span>sofisticada</span> en el mundo de la mixología. 
+        En nuestro <span>exclusivo</span> establecimiento, encontrarás una <span>amplia selección</span> de cócteles artesanales cuidadosamente elaborados 
+        con los <span>mejores ingredientes</span>.
         </AboutUsText>
         <img src={AboutUsImgMobile} alt="AboutUs-Img-Mobile" />
         <AboutUsText>
-            En nuestra tienda, podrás encontrar una amplia variedad de bebidas de <span>alta calidad</span>, desde los vinos 
-            más exquisitos hasta las cervezas más <span>exclusivas</span>, pasando por una amplia selección de 
-            licores y destilados de todo el mundo.
+        En Un Trago Más, nos esforzamos por crear cócteles que <span>deleiten</span> y <span>sorprendan</span> a nuestros clientes. Nuestro compromiso con la <span>calidad </span>
+        se refleja en cada detalle, desde la selección de los licores y destilados más <span>refinados</span> hasta la presentación <span>impecable</span> de cada bebida.
         </AboutUsText>
         <img src={AboutUsImgMobile} alt="AboutUs-Img-Mobile" />
         <AboutUsText>
-            En resumen, en Un Trago Más te garantizamos que encontrarás la <span>bebida perfecta</span> para cada ocasión 
-            y que te brindaremos una <span>experiencia</span> de compra <span>única</span> y <span>excepcional</span>.
+        En Un Trago Más, la <span>pasión</span> por los cócteles se une a la <span>excelencia</span> en cada sorbo. Permítenos llevarte en un <span>viaje de sabores </span>
+        inolvidables y descubrir por qué un trago más <span>nunca es suficiente</span>.
         </AboutUsText>
     </AboutUsWrapper>
   )

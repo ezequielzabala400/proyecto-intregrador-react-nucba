@@ -32,5 +32,6 @@ export const InputProductField = styled.input`
     }
     @media (min-width: 768px){
         height: 50px;
+        font-size: 1.6rem;
     }
 `

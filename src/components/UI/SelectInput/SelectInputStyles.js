@@ -3,6 +3,9 @@ import { styled } from "styled-components";
 export const SelectInputContainer = styled.div`
     position: relative;
     width: 200px;
+    @media (min-width: 768px) {
+        width: 220px;
+    }
 `
 
 export const ArrowImage = styled.div`
@@ -33,5 +36,6 @@ export const SelectInputField = styled.select`
     }
     @media (min-width: 768px) {
         height: 50px;
+        font-size: 1.6rem;
     }
 `

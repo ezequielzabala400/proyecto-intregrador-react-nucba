@@ -1,21 +1,22 @@
 import React from 'react'
 import { CardContainer, CardImg, CardInfo, ProductBottom, ProductDescription, ProductTitle } from './ProductsCardStyles'
-import ProductImg from '../../../public/assets/mojito.jpg'
 import ProductBtn from '../UI/ProductButton/ProductBtn'
 import {motion} from 'framer-motion'
-const ProductsCard = () => {
+
+
+const ProductsCard = ({name, image, desc, price}) => {
   return (
     <CardContainer>
         <CardImg>
-            <img src={ProductImg} alt="" />
+            <img src={`../../../public/assets/cocktails/${image}.jpg`} alt={name} />
         </CardImg>
         <CardInfo>
-            <ProductTitle>Mojito</ProductTitle>
+            <ProductTitle>{name}</ProductTitle>
             <ProductDescription>
-                Saborea la frescura del Mojito.
+                {desc}
             </ProductDescription>
             <ProductBottom>
-                <p>$1000</p>
+                <p>${price}</p>
                 <motion.div whileTap={{scale: 0.90}}>
                     <ProductBtn>Ver</ProductBtn>
                 </motion.div>

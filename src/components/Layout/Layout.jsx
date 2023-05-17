@@ -8,14 +8,22 @@ import AboutUs from '../../pages/AboutUs/AboutUs'
 import Contact from '../../pages/Contact/Contact'
 import NotFound from '../../pages/NotFound/NotFound'
 import Products from '../../pages/Products/Products'
+import { useDispatch, useSelector } from 'react-redux'
+import { showMenu } from '../../redux/slices/toggleMenuSlice'
 
 const Layout = () => {
 
   const { pathname } = useLocation()
+  const navbarMenu = useSelector(state => state.toggleMenu.hidden)
+  const dispatch = useDispatch();
 
   useEffect(() => {
     window.scrollTo(0,0);
+    if(navbarMenu){
+      dispatch(showMenu())
+    }
   }, [pathname])
+
 
   return (
     <>

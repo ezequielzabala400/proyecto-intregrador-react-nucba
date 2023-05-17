@@ -46,7 +46,7 @@ export const NavbarList = styled.ul`
     padding: 26px;
     height: calc(100vh - 70px);
     background-color: var(--Black);
-    display: ${({toggle}) => toggle ? 'flex' : 'none'};
+    display: ${({toggle}) => toggle ? 'none' : 'flex'};
     flex-direction: column;
     border-right: 1px solid var(--Green);
     border-bottom: 1px solid var(--Green);
@@ -95,7 +95,7 @@ export const NavbarCartIcon = styled.div`
 `
 
 export const Overlay = styled.div`
-    display: ${({toggle}) => toggle ? 'flex' : 'none'};
+    display: ${({toggle}) => toggle ? 'none' : 'flex'};
     position: fixed;
     top: 0;
     left: 0;

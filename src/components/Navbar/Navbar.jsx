@@ -3,21 +3,24 @@ import { NavbarCartIcon, NavbarList, NavbarListItem, NavbarLogo, NavbarMenuIcon,
 import {FaShoppingCart, FaBars, FaTimes} from 'react-icons/fa'
 import Logo from '../../../public/assets/logo-nav.svg'
 import '../../styles/animations.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { showMenu } from '../../redux/slices/toggleMenuSlice'
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const navbarMenu = useSelector(state => state.toggleMenu.hidden);
+  const dispatch = useDispatch();
 
   return (
     <>
     <NavbarWrapper>
-        <NavbarMenuIcon onClick={() => setToggle(!toggle)}>
-            {toggle ? <FaTimes /> : <FaBars />}
+        <NavbarMenuIcon onClick={() => dispatch(showMenu())}>
+            {navbarMenu ? <FaBars /> : <FaTimes />}
         </NavbarMenuIcon>
         <NavbarLogo>
             <img src={Logo} alt="Logo" />
         </NavbarLogo>
 
-        <NavbarList toggle={toggle}>
+        <NavbarList toggle={navbarMenu}>
           <li><NavbarListItem to={'/'}>Inicio</NavbarListItem></li>
           <li><NavbarListItem to={'/licores'}>Licores</NavbarListItem></li>
           <li><NavbarListItem to={'/sobre-nosotros'}>Sobre Nosotros</NavbarListItem></li>
@@ -31,7 +34,7 @@ const Navbar = () => {
         </NavbarCartIcon>
     </NavbarWrapper>
 
-    <Overlay toggle={toggle} onClick={() => setToggle(!toggle)}/>
+    <Overlay toggle={navbarMenu} onClick={() => dispatch(showMenu(navbarMenu))}/>
     </>
   )
 }

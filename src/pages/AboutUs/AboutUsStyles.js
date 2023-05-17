@@ -46,11 +46,13 @@ export const AboutUsText = styled.p`
     font-size: 1.2rem;
     color: var(--Beige);
     font-family: var(--Poppins);
+    line-height: 18px;
     span{
         color: var(--Green);
     }
     @media (min-width: 768px) {
         font-size: 1.8rem;
+        line-height: 26px;
     }
     @media (min-width: 1024px){
         width: 600px;
