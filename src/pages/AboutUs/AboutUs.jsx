@@ -2,10 +2,10 @@ import React from 'react'
 import { AboutUsText, AboutUsWrapper } from './AboutUsStyles'
 import AboutUsImgMobile from '../../../public/assets/about-us-mobile.svg'
 import '../../styles/animations.css'
-
+import background from '../../../public/assets/about-us-desktop.png'
 const AboutUs = () => {
   return (
-    <AboutUsWrapper>
+    <AboutUsWrapper background={background}>
         <h2>Sobre Nosotros</h2>
         <AboutUsText>
         Un Trago Más es la tienda de cócteles que te invita a descubrir una <span>experiencia única</span> y <span>sofisticada</span> en el mundo de la mixología. 

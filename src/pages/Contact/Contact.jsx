@@ -7,10 +7,12 @@ import TextArea from '../../components/UI/TextArea/TextArea'
 import { ContactInitialValues } from '../../Formik/initialValues'
 import { ContactValidationSchema } from '../../Formik/validationSchema'
 import '../../styles/animations.css'
+import background from '../../../public/assets/about-us-mobile.svg'
+
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer background={background}>
         <Formik
         initialValues={ContactInitialValues}
         validationSchema={ContactValidationSchema}

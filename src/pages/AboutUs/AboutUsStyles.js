@@ -29,7 +29,7 @@ export const AboutUsWrapper = styled.section`
         padding-top: 120px;
         height: 800px;
         max-width: 1200px;
-        background-image: url(../../../public/assets/about-us-desktop.png);
+        background-image: url(${({background}) => background});
         background-repeat: no-repeat;
         background-position: right bottom;
         margin-bottom: 30px;

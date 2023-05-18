@@ -1,5 +1,5 @@
 import React from 'react'
-import { FilterProductsSection, ProductsContainer, ProductsWrapper } from './ProductsStyles'
+import { FilterProductsSection, NotFoundProducts, ProductsContainer, ProductsWrapper } from './ProductsStyles'
 import InputProducts from '../../components/UI/InputProducts/InputProducts'
 import SelectInput from '../../components/UI/SelectInput/SelectInput'
 import ProductsCard from '../../components/ProductsCard/ProductsCard'
@@ -20,6 +20,9 @@ const Products = () => {
         <ProductsContainer>
             {
               products.map(product => (<ProductsCard key={product.name} {...product}/>))
+            }
+            {
+              products.length === 0 && <NotFoundProducts>No hay productos con ese nombre</NotFoundProducts>
             }
         </ProductsContainer>
     </ProductsWrapper>

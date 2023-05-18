@@ -19,7 +19,7 @@ const Layout = () => {
 
   useEffect(() => {
     window.scrollTo(0,0);
-    if(navbarMenu){
+    if(navbarMenu === false){
       dispatch(showMenu())
     }
   }, [pathname])

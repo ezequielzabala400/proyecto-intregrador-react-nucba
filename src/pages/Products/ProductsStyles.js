@@ -30,3 +30,10 @@ export const ProductsContainer = styled.div`
         gap: 60px;
     }
 `
+
+export const NotFoundProducts = styled.h2`
+    font-size: 1.4rem;
+    @media (min-width: 768px) {
+        font-size: 2.6rem;
+    }
+`

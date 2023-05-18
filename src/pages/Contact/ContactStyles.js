@@ -1,6 +1,7 @@
 import { Form } from "formik";
 import { styled } from "styled-components";
 
+
 export const ContactContainer = styled.section`
     min-height: 100vh;
     width: 100%;
@@ -8,7 +9,7 @@ export const ContactContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../public/assets/about-us-mobile.svg);
+    background-image: url(${({background}) => background});
     background-repeat: repeat-x;
     background-position: center;
     max-width: 1000px;

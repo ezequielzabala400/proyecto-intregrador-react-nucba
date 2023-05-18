@@ -44,6 +44,9 @@ export const CardInfo = styled.div`
 export const ProductTitle = styled.h3`
     font-size: 2rem;
     font-family: var(--Poppins);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     @media (min-width: 768px){
         font-size: 2.4rem;
     }

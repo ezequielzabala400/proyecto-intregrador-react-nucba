@@ -17,5 +17,6 @@ export const ProductButton = styled.button`
     }
     @media (min-width: 768px){
         width: 70px;
+        font-size: 1.4rem;
     }
 `

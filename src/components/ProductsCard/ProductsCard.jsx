@@ -8,7 +8,7 @@ const ProductsCard = ({name, image, desc, price}) => {
   return (
     <CardContainer>
         <CardImg>
-            <img src={`../../../public/assets/cocktails/${image}.jpg`} alt={name} />
+            <img src={image} alt={name} />
         </CardImg>
         <CardInfo>
             <ProductTitle>{name}</ProductTitle>
