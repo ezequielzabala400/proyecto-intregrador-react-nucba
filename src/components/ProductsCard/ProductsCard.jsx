@@ -2,9 +2,13 @@ import React from 'react'
 import { CardContainer, CardImg, CardInfo, ProductBottom, ProductDescription, ProductTitle } from './ProductsCardStyles'
 import ProductBtn from '../UI/ProductButton/ProductBtn'
 import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router'
 
 
 const ProductsCard = ({name, image, desc, price}) => {
+
+    const navigate = useNavigate()
+
   return (
     <CardContainer>
         <CardImg>
@@ -17,7 +21,7 @@ const ProductsCard = ({name, image, desc, price}) => {
             </ProductDescription>
             <ProductBottom>
                 <p>${price}</p>
-                <motion.div whileTap={{scale: 0.90}}>
+                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate(`/coctel/${name}`)}>
                     <ProductBtn>Ver</ProductBtn>
                 </motion.div>
             </ProductBottom>

@@ -5,11 +5,13 @@ export const GlobalStyles = createGlobalStyle`
         /* Colors */
         --Black: #131415;
         --LightBlack: #3F4952;
-        --Green: #CFFEDE;
+        --Green: #18FD68;
+        --LightGreen: #CFFEDE;
         --Beige: #E9E9E9;
         --White: #FFFFFF;
         --Gray: #333333;
         --Violet: #561E77;
+        --LightViolet: #BF07FF;
         --Copyright: #9C9C9C;
         --Overlay: #474747;
         --Error: rgb(255,0,0);
@@ -23,7 +25,6 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        list-style: none;
         text-decoration: none;
         scroll-behavior: smooth;
     }

@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <NavbarList toggle={navbarMenu}>
           <li><NavbarListItem to={'/'}>Inicio</NavbarListItem></li>
-          <li><NavbarListItem to={'/licores'}>Licores</NavbarListItem></li>
+          <li><NavbarListItem to={'/cocteles'}>cócteles</NavbarListItem></li>
           <li><NavbarListItem to={'/sobre-nosotros'}>Sobre Nosotros</NavbarListItem></li>
           <li><NavbarListItem to={'/contacto'}>Contacto</NavbarListItem></li>
         </NavbarList>

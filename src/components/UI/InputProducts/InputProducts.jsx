@@ -2,13 +2,18 @@ import React from 'react'
 import { FindImage, InputContainer, InputProductField } from './InputProductsStyles'
 import {FaSearch} from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
-import { searchProduct } from '../../../redux/slices/productsSlice'
+import { searchProduct, showProducts } from '../../../redux/slices/productsSlice'
 const InputProducts = () => {
 
   const dispatch = useDispatch();
 
   const searchProductFunc = (e) => {
-    dispatch(searchProduct(e.target.value.trim()))
+    if(e.target.value.trim() === ''){
+      dispatch(showProducts())
+      return;
+    } else{
+      dispatch(searchProduct(e.target.value.trim()))
+    }
   }
 
   return (
@@ -16,7 +21,11 @@ const InputProducts = () => {
         <FindImage htmlFor='searchProducts' >
             <FaSearch />
         </FindImage>
-        <InputProductField type='text' placeholder='Buscar...' id='searchProducts' onChange={searchProductFunc}/>
+        <InputProductField
+        type='text' 
+        placeholder='Buscar...' 
+        id='searchProducts' 
+        onChange={searchProductFunc}/>
     </InputContainer>
   )
 }

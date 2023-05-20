@@ -14,8 +14,8 @@ export const ButtonItem = styled.button`
     cursor: pointer;
     &:hover{
         background-color: var(--Black);
-        border: 1px solid var(--Green);
-        color: var(--Green);
+        border: 1px solid var(--LightGreen);
+        color: var(--LightGreen);
         transition: all 0.3s;
     }
 `

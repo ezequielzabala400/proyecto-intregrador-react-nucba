@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const FooterWrapper = styled.footer`
@@ -55,7 +56,7 @@ export const FooterSocialIcons = styled.div`
     a{
         color: var(--White);
         &:hover{
-            color: var(--Green);
+            color: var(--LightGreen);
         }
     }
 `
@@ -68,23 +69,26 @@ export const FooterNavbarList = styled.ul`
     align-items: center;
     gap: 10px;
     font-family: var(--Poppins);
-    a{
-        font-size: 1.4rem;
-        color: var(--White);
-        &:hover{
-            color: var(--Green);
-        }
-    }
+    list-style: none;
+    
     @media (min-width: 768px) {
         margin-top: unset;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
         width: 300px;
-        a{
+    }
+`
+
+export const FooterNavbarLink = styled(Link)`
+        font-size: 1.4rem;
+        color: var(--White);
+        &:hover{
+            color: var(--LightGreen);
+        }
+        @media (min-width: 768px){
             font-size: 1.7rem;
         }
-    }
 `
 
 export const FooterCopyright = styled.div`

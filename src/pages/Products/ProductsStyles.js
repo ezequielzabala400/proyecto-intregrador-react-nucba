@@ -37,3 +37,12 @@ export const NotFoundProducts = styled.h2`
         font-size: 2.6rem;
     }
 `
+
+export const ButtonsContainer = styled.div`
+    margin-top: 40px;
+    display: ${({show}) => show};
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+`

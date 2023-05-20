@@ -28,7 +28,7 @@ const Home = () => {
                 está en un trago más
             </HomeSubTitle>
             <HomeBtnContainer>
-                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate('/licores')}>
+                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate('/cocteles')}>
                     <Button>Ver Productos</Button>
                 </motion.div>
             </HomeBtnContainer>

@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowImage, SelectInputContainer, SelectInputField } from './SelectInputStyles'
 import {FaArrowDown} from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
-import { filterCategory, getAllProducts } from '../../../redux/slices/productsSlice'
+import { filterCategory, showProducts } from '../../../redux/slices/productsSlice'
 const SelectInput = () => {
 
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const SelectInput = () => {
   const filterProducts = (e) => {
     if(e.target.value === '') return
     if(e.target.value === 'all'){
-      dispatch(getAllProducts());
+      dispatch(showProducts());
       return;
     }
     dispatch(filterCategory(e.target.value))
@@ -22,7 +22,7 @@ const SelectInput = () => {
             <FaArrowDown />
         </ArrowImage>
         <SelectInputField onChange={filterProducts}>
-            <option value="">Categorías</option>
+            <option selected disabled>Categorías</option>
             <option value="all">Todos</option>
             <option value="popular">Populares</option>
             <option value="classic">Clasicos</option>

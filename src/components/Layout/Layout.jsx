@@ -10,6 +10,8 @@ import NotFound from '../../pages/NotFound/NotFound'
 import Products from '../../pages/Products/Products'
 import { useDispatch, useSelector } from 'react-redux'
 import { showMenu } from '../../redux/slices/toggleMenuSlice'
+import Product from '../../pages/Product/Product'
+import ProductFeatures from '../ProductFeatures/ProductFeatures'
 
 const Layout = () => {
 
@@ -20,7 +22,7 @@ const Layout = () => {
   useEffect(() => {
     window.scrollTo(0,0);
     if(navbarMenu === false){
-      dispatch(showMenu())
+      dispatch(showMenu());
     }
   }, [pathname])
 
@@ -31,7 +33,10 @@ const Layout = () => {
         <Main>
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/licores' element={<Products />} />
+            <Route path='/cocteles' element={<Products />}/>
+            <Route path='/coctel' element={<Product />}>
+              <Route path=':nombre' element={<ProductFeatures />} />
+            </Route>
             <Route path='/sobre-nosotros' element={<AboutUs />} />
             <Route path='/contacto' element={<Contact />} />
             <Route path='*' element={<NotFound />} />

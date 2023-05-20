@@ -49,6 +49,9 @@ export const AboutUsText = styled.p`
     line-height: 18px;
     span{
         color: var(--Green);
+        &:nth-child(odd){
+            color: var(--LightViolet);
+        }
     }
     @media (min-width: 768px) {
         font-size: 1.8rem;

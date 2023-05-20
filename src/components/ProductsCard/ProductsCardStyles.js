@@ -1,16 +1,21 @@
 import { styled } from "styled-components";
 
 export const CardContainer = styled.div`
-    width: 100%;
+    width: 270px;
     height: 140px;
     border: 4px solid var(--Violet);
     display: flex;
     border-radius: 10px;
-    max-width: 270px;
     @media (min-width: 768px) {
         flex-direction: column;
-        max-width: 300px;
+        width: 300px;
         height: unset;
+        transform: scale(1);
+        transition: transform 0.4s;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.4s;
+        }
     }
 `
 
@@ -47,6 +52,7 @@ export const ProductTitle = styled.h3`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: var(--Green);
     @media (min-width: 768px){
         font-size: 2.4rem;
     }
@@ -57,8 +63,13 @@ export const ProductDescription = styled.p`
     max-height: 30px;
     font-family: var(--Popins);
     font-size: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--LightViolet);
+    font-weight: 600;
     @media (min-width: 768px){
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         max-height: unset;
     }
 `

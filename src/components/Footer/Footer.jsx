@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterCopyright, FooterNavbarList, FooterSocialIcons, FooterSocialMediaContainer, FooterWrapper } from './FooterStyles'
+import { FooterContainer, FooterCopyright, FooterNavbarLink, FooterNavbarList, FooterSocialIcons, FooterSocialMediaContainer, FooterWrapper } from './FooterStyles'
 import {FaFacebook,FaInstagram,FaPinterest,FaTwitter,FaYoutube} from 'react-icons/fa'
 import LogoGlassIcon from '../../../public/assets/logo-glass.svg'
 const Footer = () => {
@@ -19,11 +19,11 @@ const Footer = () => {
             </FooterSocialMediaContainer>
 
             <FooterNavbarList>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Política de privacidad</a></li>
+                <li><FooterNavbarLink to={'/'}>Inicio</FooterNavbarLink></li>
+                <li><FooterNavbarLink to={'/cocteles'}>Productos</FooterNavbarLink></li>
+                <li><FooterNavbarLink to={'/sobre-nosotros'}>Sobre Nosotros</FooterNavbarLink></li>
+                <li><FooterNavbarLink to={'/contacto'}>Contacto</FooterNavbarLink></li>
+                <li><FooterNavbarLink to={'/politica'}>Política de privacidad</FooterNavbarLink></li>
             </FooterNavbarList>
 
             <FooterCopyright>

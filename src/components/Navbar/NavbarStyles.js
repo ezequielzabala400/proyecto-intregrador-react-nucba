@@ -10,7 +10,7 @@ export const NavbarWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    border-bottom: 1px solid var(--Green);
+    border-bottom: 1px solid var(--LightGreen);
     background-color: var(--Black);
     z-index: 10;
     @media (min-width: 768px) {
@@ -48,11 +48,12 @@ export const NavbarList = styled.ul`
     background-color: var(--Black);
     display: ${({toggle}) => toggle ? 'none' : 'flex'};
     flex-direction: column;
-    border-right: 1px solid var(--Green);
-    border-bottom: 1px solid var(--Green);
+    border-right: 1px solid var(--LightGreen);
+    border-bottom: 1px solid var(--LightGreen);
     border-bottom-right-radius: 30px;
     gap: 30px;
     animation: slide-right 0.4s;
+    list-style: none;
     @media (min-width: 768px) {
         animation: none;
         display: flex;
@@ -70,10 +71,10 @@ export const NavbarListItem = styled(NavLink)`
     font-weight: 700;
     font-family: var(--Lora);
     &:hover{
-            color: var(--Green);
+            color: var(--LightGreen);
         }
     &.active{
-            color: var(--Green);
+            color: var(--LightGreen);
         }
 `
 

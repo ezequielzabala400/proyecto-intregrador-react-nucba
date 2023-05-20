@@ -15,6 +15,7 @@ export const ArrowImage = styled.div`
     padding-top: 10px;
     color: var(--White);
     font-size: 1.8rem;
+    cursor: pointer;
     @media (min-width: 768px){
         padding-top: 16px;
     }
@@ -30,6 +31,7 @@ export const SelectInputField = styled.select`
     border: 4px solid var(--Violet);
     border-radius: 10px;
     appearance: none;
+    cursor: pointer;
     font-family: var(--Poppins);
     option{
         background-color: var(--Black);
