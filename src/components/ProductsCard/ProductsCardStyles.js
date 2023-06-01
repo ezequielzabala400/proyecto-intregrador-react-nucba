@@ -79,7 +79,6 @@ export const ProductBottom = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 4px;
     p{
         font-size: 1.4rem;
     }

@@ -20,7 +20,7 @@ const Footer = () => {
 
             <FooterNavbarList>
                 <li><FooterNavbarLink to={'/'}>Inicio</FooterNavbarLink></li>
-                <li><FooterNavbarLink to={'/cocteles'}>Productos</FooterNavbarLink></li>
+                <li><FooterNavbarLink to={'/juegos'}>Productos</FooterNavbarLink></li>
                 <li><FooterNavbarLink to={'/sobre-nosotros'}>Sobre Nosotros</FooterNavbarLink></li>
                 <li><FooterNavbarLink to={'/contacto'}>Contacto</FooterNavbarLink></li>
                 <li><FooterNavbarLink to={'/politica'}>Política de privacidad</FooterNavbarLink></li>
