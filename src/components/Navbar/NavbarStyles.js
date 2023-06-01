@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
 export const NavbarWrapper = styled.nav`
@@ -10,7 +10,7 @@ export const NavbarWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    border-bottom: 1px solid var(--LightGreen);
+    border-bottom: 1px solid var(--Red);
     background-color: var(--Black);
     z-index: 10;
     @media (min-width: 768px) {
@@ -36,6 +36,7 @@ export const NavbarLogo = styled.div`
     user-select: none;
     img{
         height: 100%;
+        border-radius: 50px;
     }
 `
 
@@ -48,8 +49,8 @@ export const NavbarList = styled.ul`
     background-color: var(--Black);
     display: ${({toggle}) => toggle ? 'none' : 'flex'};
     flex-direction: column;
-    border-right: 1px solid var(--LightGreen);
-    border-bottom: 1px solid var(--LightGreen);
+    border-right: 1px solid var(--Red);
+    border-bottom: 1px solid var(--Red);
     border-bottom-right-radius: 30px;
     gap: 30px;
     animation: slide-right 0.4s;
@@ -71,10 +72,10 @@ export const NavbarListItem = styled(NavLink)`
     font-weight: 700;
     font-family: var(--Lora);
     &:hover{
-            color: var(--LightGreen);
+            color: var(--Red);
         }
     &.active{
-            color: var(--LightGreen);
+            color: var(--Red);
         }
 `
 
@@ -85,13 +86,72 @@ export const NavbarCartIcon = styled.div`
     align-items: center;
     gap: 10px;
     color: var(--White);
-    p{
+`
+
+export const CartBuble = styled.div`
+    position: absolute;
+    right: -8px;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    font-size: 1.4rem;
+    background-color: var(--Red);
+    color: var(--White);
+`
+
+export const LoginLink = styled(Link)`
         display: none;
         font-size: 1.4rem;
         font-family: var(--Lora);
+        color: var(--White);
         @media (min-width: 768px) {
             display: flex;
         }
+`
+
+export const LoginLinkMobile = styled(Link)`
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    color: var(--White);
+    font-size: 1.2rem;
+    font-family: var(--Poppins);
+    @media (min-width: 768px) {
+            display: none;
+    }
+
+`
+
+export const UserName = styled.div`
+    position: relative;
+    h4{
+        display: none;
+        font-size: 1.4rem;
+        font-family: var(--Lora);
+        color: var(--White);
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+`
+
+export const UserNameMobile = styled.div`
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--White);
+    font-size: 1.2rem;
+    font-family: var(--Poppins);
+    @media (min-width: 768px) {
+            display: none;
     }
 `
 

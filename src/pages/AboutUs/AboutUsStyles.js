@@ -17,12 +17,17 @@ export const AboutUsWrapper = styled.section`
     }
     img{
         width: 100%;
+        height: 100px;
+        object-fit: cover;
     }
     @media (min-width: 768px) {
         max-width: 600px;
         gap: 50px;
         h2{
             font-size: 4rem;
+        }
+        img{
+            height: 120px;
         }
     }
     @media (min-width: 1024px) {
@@ -31,6 +36,7 @@ export const AboutUsWrapper = styled.section`
         max-width: 1200px;
         background-image: url(${({background}) => background});
         background-repeat: no-repeat;
+        background-size: 400px;
         background-position: right bottom;
         margin-bottom: 30px;
         h2{
@@ -50,7 +56,7 @@ export const AboutUsText = styled.p`
     span{
         color: var(--Green);
         &:nth-child(odd){
-            color: var(--LightViolet);
+            color: var(--Red);
         }
     }
     @media (min-width: 768px) {

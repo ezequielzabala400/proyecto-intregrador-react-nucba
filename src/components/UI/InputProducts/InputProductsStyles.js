@@ -23,7 +23,7 @@ export const InputProductField = styled.input`
     padding: 0 46px;
     background-color: transparent;
     color: var(--White);
-    border: 4px solid var(--Violet);
+    border: 4px solid var(--Red);
     border-radius: 30px;
     font-family: var(--Poppins);
     &::placeholder{

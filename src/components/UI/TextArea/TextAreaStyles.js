@@ -20,9 +20,12 @@ export const TextAreaField = styled.textarea`
     padding: 16px;
     background-color: transparent;
     border-radius: 10px;
-    border: 2px solid ${({isErrors}) => isErrors ? 'var(--Error)' : 'var(--Green)'};
+    border: 4px solid ${({isErrors}) => isErrors ? 'var(--Error)' : 'var(--White)'};
     color: var(--White);
     resize: none;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
 
 `
 

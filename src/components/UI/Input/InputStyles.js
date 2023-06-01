@@ -22,8 +22,11 @@ export const InputField = styled.input`
     padding: 16px;
     background-color: transparent;
     border-radius: 30px;
-    border: 2px solid ${({isErrors}) => isErrors ? 'var(--Error)' : 'var(--Green)'};
+    border: 4px solid ${({isErrors}) => isErrors ? 'var(--Error)' : 'var(--White)'};
     color: var(--White);
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
 
 `
 

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const CardContainer = styled.div`
     width: 270px;
     height: 140px;
-    border: 4px solid var(--Violet);
+    border: 4px solid var(--Red);
     display: flex;
     border-radius: 10px;
     @media (min-width: 768px) {
@@ -66,7 +66,7 @@ export const ProductDescription = styled.p`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: var(--LightViolet);
+    color: var(--Red);
     font-weight: 600;
     @media (min-width: 768px){
         font-size: 1.8rem;
@@ -76,12 +76,16 @@ export const ProductDescription = styled.p`
 
 export const ProductBottom = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    gap: 4px;
     p{
         font-size: 1.4rem;
     }
     @media (min-width: 768px){
+        flex-direction: row;
+        align-items: center;
         p{
             font-weight: 700;
             font-size: 2.2rem;

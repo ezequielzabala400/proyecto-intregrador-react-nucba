@@ -56,7 +56,7 @@ export const FooterSocialIcons = styled.div`
     a{
         color: var(--White);
         &:hover{
-            color: var(--LightGreen);
+            color: var(--Red);
         }
     }
 `
@@ -84,7 +84,7 @@ export const FooterNavbarLink = styled(Link)`
         font-size: 1.4rem;
         color: var(--White);
         &:hover{
-            color: var(--LightGreen);
+            color: var(--Red);
         }
         @media (min-width: 768px){
             font-size: 1.7rem;
@@ -105,6 +105,7 @@ export const FooterCopyright = styled.div`
 
     img{
         height: 60px;
+        border-radius: 50px;
     }
 
     p{

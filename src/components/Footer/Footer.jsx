@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterContainer, FooterCopyright, FooterNavbarLink, FooterNavbarList, FooterSocialIcons, FooterSocialMediaContainer, FooterWrapper } from './FooterStyles'
 import {FaFacebook,FaInstagram,FaPinterest,FaTwitter,FaYoutube} from 'react-icons/fa'
-import LogoGlassIcon from '../../../public/assets/logo-glass.svg'
+import LogoGlassIcon from '../../../public/assets/logo.jpeg'
 const Footer = () => {
   return (
     <FooterWrapper>
@@ -28,7 +28,7 @@ const Footer = () => {
 
             <FooterCopyright>
                 <img src={LogoGlassIcon} alt="Logo Glass Icon" />
-                <p>&#169;UnTragoMas Copyright 2023</p>
+                <p>&#169;GameHub Copyright 2023</p>
             </FooterCopyright>
         </FooterContainer>
     </FooterWrapper>

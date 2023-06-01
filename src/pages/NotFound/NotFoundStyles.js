@@ -12,7 +12,7 @@ export const NotFoundWrapper = styled.section`
 
     h2{
         font-size: 3rem;
-        color: var(--Green);
+        color: var(--Red);
         font-family: var(--Lora);
     }
 

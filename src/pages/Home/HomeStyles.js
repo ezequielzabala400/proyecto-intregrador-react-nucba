@@ -70,19 +70,19 @@ export const HomeTitle = styled.h1`
 `
 
 export const HomeSubTitle = styled.h2`
-    width: 170px;
+    width: 200px;
     text-align: center;
     font-family: var(--Poppins);
-    color: var(--Beige);
+    color: var(--Red);
     opacity: 0;
     animation: fade 0.4s 2s forwards;
     @media (min-width: 768px) {
-        width: 220px;
+        width: 260px;
         font-size: 2rem;
     }
     @media (min-width: 1024px) {
         font-size: 2.2rem;
-        width: 270px;
+        width: 320px;
     }
 `
 

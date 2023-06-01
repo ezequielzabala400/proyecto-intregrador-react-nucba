@@ -12,6 +12,7 @@ export const ProductFeaturesContainer = styled.div`
     @media (min-width: 768px) {
         flex-direction: row;
         max-width: 1200px;
+        margin-top: 70px;
         justify-content: space-evenly;
     }
 `
@@ -19,14 +20,10 @@ export const ProductFeaturesContainer = styled.div`
 export const ProductImg = styled.div`
     img{
         width: 100%;
-        height: 360px;
         border-radius: 10px;
     }
     @media (min-width: 768px) {
         width: 50%;
-        img{
-            height: 500px;
-        }
     }
 `
 
@@ -49,11 +46,12 @@ export const ProductName = styled.h2`
 `
 
 export const ProductDesc = styled.p`
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: var(--LightViolet);
+    color: var(--Copyright);
+    line-height: 20px;
     @media (min-width: 768px) {
-        font-size: 2.3rem;
+        font-size: 1.6rem;
     }
 `
 

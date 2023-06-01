@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeBtnContainer, HomeContainer, HomeContent, HomeImageDesktop, HomeImageMobile, HomeSubTitle, HomeTitle } from './HomeStyles'
-import LogoMobile from '../../../public/assets/logo-glass.svg'
-import LogoDesktop from '../../../public/assets/logo-home.png'
+import LogoMobile from '../../../public/assets/logo-home-mobile.png'
+import LogoDesktop from '../../../public/assets/logo-home2.png'
 import Button from '../../components/UI/Button/Button'
 import {motion} from 'framer-motion'
 import '../../styles/animations.css'
@@ -22,13 +22,13 @@ const Home = () => {
         </HomeImageDesktop>
         
         <HomeContent>
-            <HomeTitle>Un trago más</HomeTitle>
+            <HomeTitle>GameHub</HomeTitle>
             <HomeSubTitle>
-                El sabor de la noche
-                está en un trago más
+                "Tu destino de juegos, 
+                sin importar la plataforma"
             </HomeSubTitle>
             <HomeBtnContainer>
-                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate('/cocteles')}>
+                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate('/juegos')}>
                     <Button>Ver Productos</Button>
                 </motion.div>
             </HomeBtnContainer>

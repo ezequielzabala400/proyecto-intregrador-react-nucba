@@ -28,7 +28,7 @@ export const SelectInputField = styled.select`
     font-weight: 700;
     background-color: transparent;
     color: var(--White);
-    border: 4px solid var(--Violet);
+    border: 4px solid var(--Red);
     border-radius: 10px;
     appearance: none;
     cursor: pointer;

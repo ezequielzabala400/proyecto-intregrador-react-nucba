@@ -12,6 +12,7 @@ export const ContactContainer = styled.section`
     background-image: url(${({background}) => background});
     background-repeat: repeat-x;
     background-position: center;
+    background-size: cover;
     max-width: 1000px;
     animation: fade 0.4s;
     h2{
@@ -23,7 +24,7 @@ export const ContactContainer = styled.section`
 
 export const ContactForm = styled(Form)`
     width: 100%;
-    border: 4px solid var(--Green);
+    border: 4px solid var(--White);
     background-color: var(--Black);
     padding: 26px;
     border-radius: 16px;

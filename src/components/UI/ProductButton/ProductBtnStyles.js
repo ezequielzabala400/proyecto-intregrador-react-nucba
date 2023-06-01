@@ -7,12 +7,12 @@ export const ProductButton = styled.button`
     border: none;
     background-color: transparent;
     color: var(--White);
-    border: 3px solid var(--Violet);
+    border: 3px solid var(--Red);
     font-family: var(--Poppins);
     cursor: pointer;
     transition: background-color 0.4s;
     &:hover{
-        background-color: var(--Violet);
+        background-color: var(--Red);
         transition: all 0.4s;
     }
     @media (min-width: 768px){

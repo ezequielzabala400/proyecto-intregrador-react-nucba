@@ -16,7 +16,7 @@ export const filterProductByCategory = (category) => {
         const newProductList = productsList.map(product => product);
         return newProductList.sort((a,b) => b.price - a.price);
     }
-    return productsList.filter(product => product.category === category)
+    return productsList.filter(product =>product.category.some(categoryItem => categoryItem === category))
 }
 
 export const searchProductByName = (name) => {

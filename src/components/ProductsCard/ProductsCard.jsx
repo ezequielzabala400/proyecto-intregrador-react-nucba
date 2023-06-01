@@ -3,9 +3,10 @@ import { CardContainer, CardImg, CardInfo, ProductBottom, ProductDescription, Pr
 import ProductBtn from '../UI/ProductButton/ProductBtn'
 import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router'
+import { formatPrice } from '../../utils/functions'
 
 
-const ProductsCard = ({name, image, desc, price}) => {
+const ProductsCard = ({name, image, price, sub}) => {
 
     const navigate = useNavigate()
 
@@ -17,11 +18,11 @@ const ProductsCard = ({name, image, desc, price}) => {
         <CardInfo>
             <ProductTitle>{name}</ProductTitle>
             <ProductDescription>
-                {desc}
+                {sub}
             </ProductDescription>
             <ProductBottom>
-                <p>${price}</p>
-                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate(`/coctel/${name}`)}>
+                <p>${formatPrice(price)}</p>
+                <motion.div whileTap={{scale: 0.90}} onClick={() => navigate(`/juego/${name}`)}>
                     <ProductBtn>Ver</ProductBtn>
                 </motion.div>
             </ProductBottom>
